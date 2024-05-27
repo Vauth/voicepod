@@ -41,7 +41,7 @@ class VoicePod:
     # Bytes to Mp3 using wave
     @staticmethod
     def BytestoMp3(content):
-        filename = str(uuid.uuid4())+"-output.wav"
+        filename = str(uuid.uuid4())+"-output.mp3" # [wav, mp3]
         with wave.open(filename, "wb") as f:
             f.setnchannels(1)
             f.setsampwidth(2)
